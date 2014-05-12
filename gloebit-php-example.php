@@ -11,8 +11,8 @@ if (isset($_GET["error"]))
     die;
 }
 
-$authorizeUrl = 'https://www.gloebit.com/oauth2/authorize';
-$accessTokenUrl = 'https://www.gloebit.com/oauth2/access-token';
+$authorizeUrl = 'https://sandbox.gloebit.com/oauth2/authorize';
+$accessTokenUrl = 'https://sandbox.gloebit.com/oauth2/access-token';
 $clientId = 'test-consumer';
 $clientSecret = 's3cr3t';
 $redirectUrl = "http://localhost/gloebit-php-example.php";
@@ -54,7 +54,7 @@ else
     $client->setAccessTokenType
       (OAuth2\Client::ACCESS_TOKEN_BEARER);
 
-    $response = $client->fetch("https://www.gloebit.com/id");
+    $response = $client->fetch("https://sandbox.gloebit.com/id");
     echo('<strong>Response for fetch id:</strong><pre>');
     print_r($response);
     echo('</pre>');
