@@ -1,5 +1,5 @@
 PHP-gloebit
 ===========
 
-Example PHP interface to [Gloebit](http://docs.gloebit.com/)'s micropayment service.
+Example PHP interface to [Gloebit](http://dev.gloebit.com/#integration)'s micropayment service.
 
